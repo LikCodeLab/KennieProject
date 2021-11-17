@@ -9,6 +9,11 @@ android {
 
     defaultConfig {
         applicationId "com.kennie.example.project"
+        versionCode 100
+        versionName "1.0.0"
+        manifestPlaceholders = [
+                MY_CHANNEL: "unknown",
+        ]
     }
 
 }
@@ -21,4 +26,5 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation project(':base_project')
 }

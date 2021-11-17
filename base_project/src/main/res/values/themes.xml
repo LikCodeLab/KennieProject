@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseProjectTheme" parent="BaseAppTheme" />
+
+    <style name="BaseProjectSplashTheme" parent="BaseSplashTheme" />
+</resources>
