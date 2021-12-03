@@ -20,4 +20,4 @@ include ':module_user'
 include ':library_views'
 
 
-
+include ':library_chat'
