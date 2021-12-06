@@ -21,3 +21,4 @@ include ':library_views'
 
 
 include ':library_chat'
+include ':app_example'

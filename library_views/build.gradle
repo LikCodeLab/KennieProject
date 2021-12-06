@@ -11,7 +11,7 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
-    implementation 'com.github.kennielab:KennieRes:v0.0.1'
+    implementation kennieX.res
 
     // 动画解析库：https://github.com/airbnb/lottie-android
     // 动画资源：https://lottiefiles.com、https://icons8.com/animated-icons

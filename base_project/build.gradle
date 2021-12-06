@@ -18,7 +18,7 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
-    implementation kennieX.res
+    api kennieX.res
 
     implementation project(':module_user')
 

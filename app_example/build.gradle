@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+apply from: "${rootDir}/configs/tools/gradle/app.gradle"
+
+android {
+
+    defaultConfig {
+        applicationId "com.kennie.example"
+    }
+}
+
+dependencies {
+
+    implementation depK.core
+    implementation depX.appcompat
+    implementation depX.material
+    implementation kennieX.res
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation project(':library_views')
+}
