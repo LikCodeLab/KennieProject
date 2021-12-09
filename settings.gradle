@@ -22,3 +22,9 @@ include ':library_views'
 
 include ':library_chat'
 include ':app_example'
+
+
+//************************通知模块 功能项目 ************************
+include ':app_example_notification'
+include ':library_notification'
+
