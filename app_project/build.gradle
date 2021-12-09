@@ -22,6 +22,7 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
+    implementation depX.multidex
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
