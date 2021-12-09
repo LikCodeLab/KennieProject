@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+import com.kennie.base.project.BaseTools;
+
 /**
  * @项目名 KennieProject
  * @类名称 InitializeService
@@ -39,11 +41,6 @@ public class InitializeService extends IntentService {
 
     private void performInit() {
         Log.i(TAG, "初始化 任务启动");
-        //CrashHandler.getInstance().init(getApplication());
-        //需要在 Application 的 onCreate() 中调用一次 BaseIotTools.instance()....
-        //1080,1920是为了适配而去设置相关的值
-        //设置宽度|高度布局尺寸 layout 布局文件以pt为单位 setBaseScreenParam(1080,1920,true)
-
-
+        BaseTools.instance().create(getApplication());
     }
 }
