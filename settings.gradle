@@ -10,6 +10,7 @@ dependencyResolutionManagement {
 rootProject.name = "KennieProject"
 
 //************************演示项目 目录************************
+include ':app'
 include ':app_example'
 include ':app_project'
 include ':base_project'
@@ -41,5 +42,6 @@ project(':library_chat').projectDir = new File('library/library_chat')
 //************************通知模块 功能项目 ************************
 include ':app_example_notification'
 include ':library_notification'
+
 
 
