@@ -16,16 +16,16 @@ include ':app_project'
 include ':base_project'
 
 //************************模块库 目录************************
+// 主模块
+include ':module_main'
+project(':module_main').projectDir = new File('module/module_main')
+
+
 // 用户模块
 include ':module_user_old'
 project(':module_user_old').projectDir = new File('module/module_user_old')
 
 //************************公共库 目录************************
-// library Project通用模块
-include ':library_project'
-project(':library_project').projectDir = new File('library/library_project')
-
-
 // library通用模块
 include ':library_common'
 project(':library_common').projectDir = new File('library/library_common')
@@ -33,6 +33,17 @@ project(':library_common').projectDir = new File('library/library_common')
 // 自定义view widget 通用模块
 include ':library_views'
 project(':library_views').projectDir = new File('library/library_views')
+
+// library Project通用模块
+include ':library_project'
+project(':library_project').projectDir = new File('library/library_project')
+
+
+
+// ****************************************OLD***************************************
+// 自定义view widget 通用模块
+include ':library_views_old'
+project(':library_views_old').projectDir = new File('library/library_views_old')
 
 // 聊天 通用模块
 include ':library_chat'
@@ -42,6 +53,3 @@ project(':library_chat').projectDir = new File('library/library_chat')
 //************************通知模块 功能项目 ************************
 include ':app_example_notification'
 include ':library_notification'
-
-
-

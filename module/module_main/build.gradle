@@ -1,0 +1,45 @@
+plugins {
+    // 由于Main组件目前定位是整合且未完善，暂时不允许单独运行调试，只作为lib引入到app之后运行
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+apply from: "${rootDir}/configs/tools/gradle/library.gradle"
+
+android {
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        //ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    //资源文件配置
+    sourceSets {
+        main {
+            if (isModuleMain.toBoolean()) {
+                manifest.srcFile 'src/main/module/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            }
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation depK.core
+    implementation depX.appcompat
+    implementation depX.material
+    implementation project(':base_project')
+
+    implementation project(':library_common')
+    implementation project(':library_views')
+    annotationProcessor arouterX.arouter_compiler
+}

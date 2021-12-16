@@ -9,12 +9,10 @@ android {
     defaultConfig {
         versionCode 1
         versionName "1.0.0"
-        if (LibArouter.toBoolean()) {
-            //ARouter
-            javaCompileOptions {
-                annotationProcessorOptions {
-                    arguments = [AROUTER_MODULE_NAME: project.getName()]
-                }
+        //ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
     }
@@ -24,23 +22,19 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
+
     api kennieX.res
-    if (LibArouter.toBoolean()) {
-        // ARouter
-        // https://github.com/alibaba/ARouter
-        api arouterX.arouter
-        annotationProcessor arouterX.arouter_compiler
-    }
-    if (LibGlide.toBoolean()) {
-        //Glide
-        // 图片加载框架：https://github.com/bumptech/glide
-        // 官方使用文档：https://github.com/Muyangmin/glide-docs-cn
-        api imageX.glide
-        api imageX.glide_loader_recyclerview
-        annotationProcessor imageX.glide_compiler
-    }
-    if (LibLeakcanary.toBoolean()) {
-        // 内存泄漏监测框架：https://github.com/square/leakcanary
-        debugApi crashX.leakcanary
-    }
+
+    // ARouter
+    // https://github.com/alibaba/ARouter
+    api arouterX.arouter
+    annotationProcessor arouterX.arouter_compiler
+    //Glide
+    // 图片加载框架：https://github.com/bumptech/glide
+    // 官方使用文档：https://github.com/Muyangmin/glide-docs-cn
+    api imageX.glide
+    api imageX.glide_loader_recyclerview
+    annotationProcessor imageX.glide_compiler
+    // 内存泄漏监测框架：https://github.com/square/leakcanary
+    debugApi crashX.leakcanary
 }
