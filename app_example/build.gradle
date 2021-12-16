@@ -19,4 +19,5 @@ dependencies {
     implementation kennieX.res
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation project(':library_views')
+    implementation project(':library_project')
 }
