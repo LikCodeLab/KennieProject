@@ -16,7 +16,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.content.ContextCompat;
 
-import com.kennie.base.project.R;
+import com.kennie.project.R;
+
 
 /**
  * @项目名 KennieProject

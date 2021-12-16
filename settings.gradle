@@ -27,3 +27,4 @@ include ':library_chat'
 include ':app_example_notification'
 include ':library_notification'
 
+include ':library_common'
