@@ -24,6 +24,7 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
+    api kennieX.res
     if (LibArouter.toBoolean()) {
         // ARouter
         // https://github.com/alibaba/ARouter

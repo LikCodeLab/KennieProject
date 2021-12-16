@@ -10,21 +10,36 @@ dependencyResolutionManagement {
 rootProject.name = "KennieProject"
 
 //************************演示项目 目录************************
-include ':app_project'
 include ':app_example'
-
-//************************公共库 目录************************
+include ':app_project'
 include ':base_project'
 
+//************************模块库 目录************************
+// 用户模块
 include ':module_user'
+project(':module_user').projectDir = new File('module/module_user')
 
+//************************公共库 目录************************
+// library Project通用模块
 include ':library_project'
+project(':library_project').projectDir = new File('library/library_project')
+
+
+// library通用模块
+include ':library_common'
+project(':library_common').projectDir = new File('library/library_common')
+
+// 自定义view widget 通用模块
 include ':library_views'
+project(':library_views').projectDir = new File('library/library_views')
+
+// 聊天 通用模块
 include ':library_chat'
+project(':library_chat').projectDir = new File('library/library_chat')
 
 
 //************************通知模块 功能项目 ************************
 include ':app_example_notification'
 include ':library_notification'
 
-include ':library_common'
+
