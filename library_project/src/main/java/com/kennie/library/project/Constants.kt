@@ -1,9 +1,9 @@
-package com.kennie.base.project.config
+package com.kennie.library.project
 
 /**
  * @项目名 KennieProject
  * @类名称 Constants
- * @类描述 固定参数
+ * @类描述 固定参数常量
  * @创建人 Kennie
  * @修改人
  * @创建时间 2021/11/17 21:26

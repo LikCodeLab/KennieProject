@@ -1,18 +1,13 @@
-package com.kennie.base.project.core.action;
+package com.kennie.library.project.base.action;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
 
 /**
- * @项目名 KennieProject
- * @类名称 HandlerAction
- * @类描述 Handler意图处理
- * @创建人 Kennie
- * @修改人
- * @创建时间 2021/11/17 23:06
+ * Handler意图处理
  */
-public interface HandlerAction {
+public interface IHandlerAction {
 
     Handler HANDLER = new Handler(Looper.getMainLooper());
 

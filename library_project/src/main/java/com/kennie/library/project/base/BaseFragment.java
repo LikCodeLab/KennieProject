@@ -1,4 +1,4 @@
-package com.kennie.base.project.core;
+package com.kennie.library.project.base;
 
 
 import android.app.Activity;
@@ -13,20 +13,14 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 /**
- * @项目名 KennieProject
- * @类名称 BaseFragment
- * @类描述 Fragment基类
- * @创建人 Kennie
- * @修改人
- * @创建时间 2021/11/17 23:08
+ * 所有Fragment的基类
  */
 public abstract class BaseFragment extends Fragment {
 
     protected Activity mActivity;
 
-
     /**
-     * 获取全局的context 防止使用getActivity()为空
+     * 获取全局的context，防止使用getActivity()为空
      *
      * @param context 上下文
      */
@@ -36,32 +30,48 @@ public abstract class BaseFragment extends Fragment {
         this.mActivity = (Activity) context;
     }
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return LayoutInflater.from(mActivity).inflate(getLayoutId(), container, false);
     }
 
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        init(savedInstanceState);
         initView(view, savedInstanceState);
         initData();
     }
 
+
+    /**
+     * 初始化数据 建议在此方法内加载数据和处理布局显示数据
+     */
+    public void initData() {
+    }
+
+
+    /**
+     * 初始化绑定布局LayoutID(onCreateView中需要的layoutID)
+     *
+     * @return layoutID
+     */
     protected abstract int getLayoutId();
 
 
     /**
-     * initViews会在启动时首先执行，建议在此方法内进行布局绑定、View初始化等操作
+     * 初始化
+     *
+     * @param savedInstanceState savedInstanceState
      */
-    public abstract void initView(View view, Bundle savedInstanceState);
-
+    protected abstract void init(Bundle savedInstanceState);
 
     /**
-     * initData 会在布局加载后执行，建议在此方法内加载数据和处理布局显示数据
+     * 初始化view
+     *
+     * @param view               view
+     * @param savedInstanceState savedInstanceState
      */
-    public abstract void initData();
+    protected abstract void initView(View view, Bundle savedInstanceState);
 }

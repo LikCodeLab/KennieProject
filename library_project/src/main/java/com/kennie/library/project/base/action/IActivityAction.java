@@ -1,4 +1,4 @@
-package com.kennie.base.project.core.action;
+package com.kennie.library.project.base.action;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,14 +6,9 @@ import android.content.ContextWrapper;
 import android.content.Intent;
 
 /**
- * @项目名 KennieProject
- * @类名称 ActivityAction
- * @类描述 Activity相关意图
- * @创建人 Kennie
- * @修改人
- * @创建时间 2021/11/17 23:05
+ * Activity相关意图
  */
-public interface ActivityAction {
+public interface IActivityAction {
 
     /**
      * 获取 Context 对象
@@ -36,6 +31,7 @@ public interface ActivityAction {
         } while (context != null);
         return null;
     }
+
 
     /**
      * 跳转 Activity 简化版
