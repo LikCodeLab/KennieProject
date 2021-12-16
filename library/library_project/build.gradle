@@ -14,8 +14,16 @@ android {
 }
 
 dependencies {
-    implementation depK.core
-    implementation depX.appcompat
-    implementation depX.material
     api project(":library_common")
+    // ARouter
+    // https://github.com/alibaba/ARouter
+    api arouterX.arouter
+    //Glide
+    // 图片加载框架：https://github.com/bumptech/glide
+    // 官方使用文档：https://github.com/Muyangmin/glide-docs-cn
+    api imageX.glide
+    api imageX.glide_loader_recyclerview
+    annotationProcessor imageX.glide_compiler
+    // 内存泄漏监测框架：https://github.com/square/leakcanary
+    debugApi crashX.leakcanary
 }

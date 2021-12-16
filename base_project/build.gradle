@@ -14,11 +14,6 @@ android {
 }
 
 dependencies {
-
-    implementation depK.core
-    implementation depX.appcompat
-    implementation depX.material
     implementation depX.multidex
-    api kennieX.res
     api project(':library_project')
 }
