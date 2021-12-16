@@ -20,7 +20,7 @@ dependencies {
     implementation depX.material
     implementation depX.multidex
     api kennieX.res
-    implementation project(':library_project')
+    api project(':library_project')
 
     implementation project(':module_user')
 

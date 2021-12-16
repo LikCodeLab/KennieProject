@@ -17,5 +17,5 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
-    implementation project(":library_common")
+    api project(":library_common")
 }

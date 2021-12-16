@@ -1,6 +1,9 @@
 package com.kennie.example.project;
 
+
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.kennie.base.project.app.IApplication;
+
 
 /**
  * @项目名 KennieProject
@@ -15,5 +18,16 @@ public class ProjectApplication extends IApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        initARouter(); // 初始化路由
+
+    }
+
+    private void initARouter() {
+        if (BuildConfig.DEBUG) {
+            ARouter.openLog();
+            ARouter.openDebug();
+        }
+        ARouter.init(this);
     }
 }
