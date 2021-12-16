@@ -22,6 +22,6 @@ dependencies {
     api kennieX.res
     api project(':library_project')
 
-    implementation project(':module_user')
+    implementation project(':module_user_old')
 
 }

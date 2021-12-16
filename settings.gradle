@@ -17,8 +17,8 @@ include ':base_project'
 
 //************************模块库 目录************************
 // 用户模块
-include ':module_user'
-project(':module_user').projectDir = new File('module/module_user')
+include ':module_user_old'
+project(':module_user_old').projectDir = new File('module/module_user_old')
 
 //************************公共库 目录************************
 // library Project通用模块
