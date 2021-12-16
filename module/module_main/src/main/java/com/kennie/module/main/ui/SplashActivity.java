@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.kennie.base.project.ProjectActivity;
-import com.kennie.base.project.config.RouterConfig;
+import com.kennie.base.project.config.RouterConstant;
 import com.kennie.module.main.BuildConfig;
 import com.kennie.module.main.R;
 import com.kennie.module.main.databinding.ActSplashBinding;
@@ -14,7 +14,7 @@ import com.kennie.module.main.databinding.ActSplashBinding;
 /**
  * App启动页
  */
-@Route(path = RouterConfig.path_main_splash)
+@Route(path = RouterConstant.path_main_splash)
 public class SplashActivity extends ProjectActivity {
 
     private ActSplashBinding actSplashBinding;

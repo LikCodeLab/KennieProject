@@ -19,7 +19,6 @@ public class ProjectApplication extends IApplication {
     public void onCreate() {
         super.onCreate();
 
-        initARouter(); // 初始化路由
 
     }
 

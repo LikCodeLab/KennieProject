@@ -17,4 +17,5 @@ dependencies {
     implementation depX.material
     implementation depX.constraintlayout
     implementation depX.multidex
+    implementation project(':base_project')
 }
