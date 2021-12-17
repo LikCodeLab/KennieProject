@@ -53,3 +53,4 @@ project(':library_chat').projectDir = new File('library/library_chat')
 //************************通知模块 功能项目 ************************
 include ':app_example_notification'
 include ':library_notification'
+include ':app_example_views'

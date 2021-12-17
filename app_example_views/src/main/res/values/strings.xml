@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">app_example_views</string>
+    <string name="example_check_view">演示勾选(CheckView)</string>
+</resources>

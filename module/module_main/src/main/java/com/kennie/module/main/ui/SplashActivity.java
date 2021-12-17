@@ -14,7 +14,7 @@ import com.kennie.module.main.databinding.ActSplashBinding;
 /**
  * App启动页
  */
-@Route(path = RouterPath.path_main_splash)
+@Route(path = RouterPath.Main.PAGER_MAIN)
 public class SplashActivity extends ProjectActivity {
 
     private ActSplashBinding actSplashBinding;
