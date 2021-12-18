@@ -30,14 +30,10 @@ project(':module_user_old').projectDir = new File('module/module_user_old')
 include ':library_common'
 project(':library_common').projectDir = new File('library/library_common')
 
-// 自定义view widget 通用模块
-include ':library_views'
-project(':library_views').projectDir = new File('library/library_views')
 
 // library Project通用模块
 include ':library_project'
 project(':library_project').projectDir = new File('library/library_project')
-
 
 
 // ****************************************OLD***************************************
@@ -53,4 +49,3 @@ project(':library_chat').projectDir = new File('library/library_chat')
 //************************通知模块 功能项目 ************************
 include ':app_example_notification'
 include ':library_notification'
-include ':app_example_views'

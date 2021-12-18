@@ -35,7 +35,6 @@ android {
 
 dependencies {
     implementation project(':base_project')
-    implementation project(':library_views')
     // ARouter
     annotationProcessor arouterX.arouter_compiler
 }
