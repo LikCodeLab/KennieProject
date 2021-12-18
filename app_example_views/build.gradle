@@ -19,6 +19,6 @@ dependencies {
     implementation depX.material
     implementation depX.constraintlayout
     implementation kennieX.res
-    api project(':library_views')
+    implementation project(':library_views')
 
 }

@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.kennie.views.CheckView;
+import com.kennie.views.checkbox.CheckView;
 
 /**
  * 演示勾选(CheckView)

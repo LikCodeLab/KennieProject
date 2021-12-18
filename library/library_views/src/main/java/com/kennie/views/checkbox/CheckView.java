@@ -1,4 +1,4 @@
-package com.kennie.views;
+package com.kennie.views.checkbox;
 
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
@@ -16,6 +16,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.Checkable;
+
+import com.kennie.views.R;
 
 /**
  * @项目名 KennieProject
